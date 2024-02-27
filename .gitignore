@@ -5,3 +5,4 @@ riderModule.iml
 /_ReSharper.Caches/
 /.idea/
 /SelfHostedGoogleFonts.Sample/wwwroot/google-fonts/
+*.user
