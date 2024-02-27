@@ -16,7 +16,7 @@ public class FileSystemFontStorage(
         return Task.FromResult(exists);
     }
 
-    public async Task StoreFileAsync(string filename, Stream data)
+    public async Task StoreAssetAsync(string filename, Stream data, string? contentType)
     {
         var path = GetFilePath(filename);
         var dir = Path.GetDirectoryName(path) 
@@ -28,7 +28,7 @@ public class FileSystemFontStorage(
         await data.CopyToAsync(file).ConfigureAwait(false);
     }
 
-    public async Task StoreFileAsync(string filename, string content)
+    public async Task StoreStylesheetAsync(string filename, string content)
     {
         var path = GetFilePath(filename);
         var dir = Path.GetDirectoryName(path) 

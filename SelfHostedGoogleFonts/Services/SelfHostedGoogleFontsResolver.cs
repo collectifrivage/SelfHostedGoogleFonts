@@ -33,7 +33,7 @@ public class SelfHostedGoogleFontsResolver(IFontStorage storage, IHttpClientFact
                     async resourceUrl => await GetSelfHostedResourceUrl(resourceUrl))
                 .ConfigureAwait(false);
 
-            await storage.StoreFileAsync(expectedFilename, processedCss);
+            await storage.StoreStylesheetAsync(expectedFilename, processedCss).ConfigureAwait(false);
         }
 
         return storage.GetFileUrl(expectedFilename);
@@ -46,8 +46,11 @@ public class SelfHostedGoogleFontsResolver(IFontStorage storage, IHttpClientFact
 
         if (!await storage.FileExistsAsync(filename))
         {
-            var data = await _httpClient.GetStreamAsync(sourceUrl).ConfigureAwait(false);
-            await storage.StoreFileAsync(filename, data);
+            var response = await _httpClient.GetAsync(sourceUrl).ConfigureAwait(false);
+            var data = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
+            var contentType = response.Content.Headers.ContentType?.MediaType;
+            
+            await storage.StoreAssetAsync(filename, data, contentType).ConfigureAwait(false);
         } 
                             
         return storage.GetFileUrl(filename);
