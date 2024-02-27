@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfHostedGoogleFonts", "Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfHostedGoogleFonts.Sample", "SelfHostedGoogleFonts.Sample\SelfHostedGoogleFonts.Sample.csproj", "{EF6D774F-EFCB-4037-87BD-6BD1C8937083}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfHostedGoogleFonts.Storage.AzureBlob", "SelfHostedGoogleFonts.Storage.AzureBlob\SelfHostedGoogleFonts.Storage.AzureBlob.csproj", "{8D554AFB-36C9-41F0-BC93-A9AE1C614B49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{EF6D774F-EFCB-4037-87BD-6BD1C8937083}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF6D774F-EFCB-4037-87BD-6BD1C8937083}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF6D774F-EFCB-4037-87BD-6BD1C8937083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D554AFB-36C9-41F0-BC93-A9AE1C614B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D554AFB-36C9-41F0-BC93-A9AE1C614B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D554AFB-36C9-41F0-BC93-A9AE1C614B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D554AFB-36C9-41F0-BC93-A9AE1C614B49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
