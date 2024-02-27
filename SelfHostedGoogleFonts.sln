@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfHostedGoogleFonts", "SelfHostedGoogleFonts\SelfHostedGoogleFonts.csproj", "{0E44812E-46C6-458B-8420-CA4AEFA0CB77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfHostedGoogleFonts.Sample", "SelfHostedGoogleFonts.Sample\SelfHostedGoogleFonts.Sample.csproj", "{EF6D774F-EFCB-4037-87BD-6BD1C8937083}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{0E44812E-46C6-458B-8420-CA4AEFA0CB77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E44812E-46C6-458B-8420-CA4AEFA0CB77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E44812E-46C6-458B-8420-CA4AEFA0CB77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF6D774F-EFCB-4037-87BD-6BD1C8937083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF6D774F-EFCB-4037-87BD-6BD1C8937083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF6D774F-EFCB-4037-87BD-6BD1C8937083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF6D774F-EFCB-4037-87BD-6BD1C8937083}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

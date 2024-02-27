@@ -1,0 +1,29 @@
+﻿@* SelfHostedGoogleFonts: Register the tag helper. This could be moved to _ViewImports.cshtml to make it available globally *@
+@addTagHelper *, SelfHostedGoogleFonts
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - SelfHostedGoogleFonts.Sample</title>
+    
+    @* SelfHostedGoogleFonts: use the tag helper to request a specific font. This will render a <link> tag. *@
+    <google-fonts spec="Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700" />
+    
+    @* Use the font! *@
+    <style>
+        body {
+          font-family: Roboto, sans-serif;
+        }
+    </style>
+    
+</head>
+<body>
+<main role="main">
+    @RenderBody()
+</main>
+
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
