@@ -1,6 +1,6 @@
 # SelfHostedGoogleFonts
 
-With this package you can easily self-host Google Fonts, which helps protect your user's from Google's tracking.
+With this package you can easily self-host Google Fonts, which helps protect your users from Google's tracking.
 
 ## How to use
 
