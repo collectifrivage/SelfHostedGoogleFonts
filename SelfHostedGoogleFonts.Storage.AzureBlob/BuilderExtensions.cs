@@ -1,9 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using SelfHostedGoogleFonts.Storage.AzureBlobStorage;
+using SelfHostedGoogleFonts.Storage;
+using SelfHostedGoogleFonts.Storage.AzureBlob;
 
 // ReSharper disable once CheckNamespace
-using SelfHostedGoogleFonts.Storage;
-
 namespace SelfHostedGoogleFonts;
 
 public static class BuilderExtensions

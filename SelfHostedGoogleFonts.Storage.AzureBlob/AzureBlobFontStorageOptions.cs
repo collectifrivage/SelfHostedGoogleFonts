@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Options;
 
-namespace SelfHostedGoogleFonts.Storage.AzureBlobStorage;
+namespace SelfHostedGoogleFonts.Storage.AzureBlob;
 
 public class AzureBlobFontStorageOptions : IValidateOptions<AzureBlobFontStorageOptions>
 {

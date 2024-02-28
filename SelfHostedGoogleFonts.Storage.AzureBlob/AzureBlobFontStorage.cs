@@ -2,7 +2,7 @@
 using Azure.Storage.Blobs.Models;
 using Microsoft.Extensions.Options;
 
-namespace SelfHostedGoogleFonts.Storage.AzureBlobStorage;
+namespace SelfHostedGoogleFonts.Storage.AzureBlob;
 
 public class AzureBlobFontStorage(IOptions<AzureBlobFontStorageOptions> options) : IFontStorage
 {
