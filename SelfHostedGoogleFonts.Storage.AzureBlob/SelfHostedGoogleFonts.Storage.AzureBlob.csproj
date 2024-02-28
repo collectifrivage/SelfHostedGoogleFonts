@@ -6,6 +6,17 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>1.0.0</Version>
+        <Title>Azure Blob Storage for SelfHostedGoogleFonts</Title>
+        <Authors>david.thibault</Authors>
+        <Description>Azure Blob Storage implementation for SelfHostedGoogleFonts.</Description>
+        <Copyright>2024 Rivage</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/collectifrivage/SelfHostedGoogleFonts</RepositoryUrl>
+    </PropertyGroup>
+
     <ItemGroup>
       <ProjectReference Include="..\SelfHostedGoogleFonts\SelfHostedGoogleFonts.csproj" />
     </ItemGroup>
