@@ -8,13 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>@ViewData["Title"] - SelfHostedGoogleFonts.Sample</title>
     
-    @* SelfHostedGoogleFonts: use the tag helper to request a specific font. This will render a <link> tag. *@
-    <google-fonts spec="Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700" />
+    @* SelfHostedGoogleFonts: use the tag helper to request specific fonts. This will render a <link> tag. *@
+    <google-fonts>
+        <google-font spec="Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700"/>
+        <google-font spec="Abril+Fatface"/>
+    </google-fonts>
     
-    @* Use the font! *@
+    @* Use the fonts! *@
     <style>
-        body {
+        p {
           font-family: Roboto;
+        }
+        h1 {
+          font-family: Abril Fatface;
+          font-weight: normal;
         }
     </style>
     

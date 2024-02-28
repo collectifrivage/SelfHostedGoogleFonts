@@ -35,7 +35,15 @@ You can include this font in your markup in one of two ways:
 <google-fonts spec="Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700" />
 ```
 
-At this time, the tag helper supports only a single spec at a time.
+If you need multiple fonts, use this syntax instead:
+
+```html
+<google-fonts>
+    <google-font spec="spec1"/>
+    <google-font spec="spec2"/>
+    <google-font spec="..."/>
+</google-fonts>
+```
 
 ### With an HtmlHelper extension
 
@@ -43,7 +51,7 @@ At this time, the tag helper supports only a single spec at a time.
 @Html.AddGoogleFontsAsync("Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700")
 ```
 
-With this approach, you can specify multiple specs: `AddGoogleFontsAsync("spec1", "spec2", ...)`
+You can also specify multiple specs: `AddGoogleFontsAsync("spec1", "spec2", ...)`
 
 ## Customizing the file system storage
 

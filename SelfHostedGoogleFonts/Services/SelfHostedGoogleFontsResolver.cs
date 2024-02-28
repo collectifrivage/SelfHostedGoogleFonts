@@ -8,6 +8,9 @@ public class SelfHostedGoogleFontsResolver(IFontStorage storage, IHttpClientFact
 {
     private readonly ConcurrentDictionary<string, string> _cache = new();
     private readonly HttpClient _httpClient = httpClientFactory.CreateClient();
+
+    public Task<string> GetSelfHostedStylesheetUrlAsync(IEnumerable<string> fontSpecs) =>
+        GetSelfHostedStylesheetUrlAsync(fontSpecs.ToArray());
     
     public async Task<string> GetSelfHostedStylesheetUrlAsync(params string[] fontSpecs)
     {
