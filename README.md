@@ -48,7 +48,7 @@ If you need multiple fonts, use this syntax instead:
 ### With an HtmlHelper extension
 
 ```csharp
-@Html.AddGoogleFontsAsync("Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700")
+@await Html.AddGoogleFontsAsync("Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700")
 ```
 
 You can also specify multiple specs: `AddGoogleFontsAsync("spec1", "spec2", ...)`
