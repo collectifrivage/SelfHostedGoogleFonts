@@ -64,3 +64,9 @@ You can also specify multiple specs: `AddGoogleFontsAsync("spec1", "spec2", ...)
 
 - `RootPath`: the folder where fonts and stylesheets will be saved. By default, this will be `{IWebHostEnvironment.WebRootPath}/{PublicPathPrefix}`, which usually maps to `wwwroot/google-fonts/`.
 - `PublicPathPrefix`: a URL segment added in front of public URLs. Defaults to "google-fonts".
+
+## How it works
+
+It builds the Google Fonts stylesheet URL from the specs you specify. If this stylesheet was already processed, a `<link>` tag is created using the self-hosted URL and the work is done.
+
+Otherwise, the stylesheet is downloaded, and is scanned to find all font files that it references. Those fonts are downloaded and saved to the storage system, and then the stylesheet is updated to use the self-hosted font URLs. Finally the stylesheet is saved to the storage system, before creating the `<link>` tag as usual. 
