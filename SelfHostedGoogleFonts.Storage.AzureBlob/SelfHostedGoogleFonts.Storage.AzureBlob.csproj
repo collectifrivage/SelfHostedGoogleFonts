@@ -14,6 +14,7 @@
         <Description>Azure Blob Storage implementation for SelfHostedGoogleFonts.</Description>
         <Copyright>2024 Rivage</Copyright>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
         <RepositoryUrl>https://github.com/collectifrivage/SelfHostedGoogleFonts</RepositoryUrl>
     </PropertyGroup>
 
@@ -23,6 +24,10 @@
 
     <ItemGroup>
       <PackageReference Include="Azure.Storage.Blobs" Version="12.19.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\" />
     </ItemGroup>
 
 </Project>

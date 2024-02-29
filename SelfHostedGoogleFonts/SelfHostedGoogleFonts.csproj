@@ -14,11 +14,16 @@
         <Description>Easily self-host Google Fonts, which helps protect your users from Google's tracking.</Description>
         <Copyright>2024 Rivage</Copyright>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
         <RepositoryUrl>https://github.com/collectifrivage/SelfHostedGoogleFonts</RepositoryUrl>
     </PropertyGroup>
     
     <ItemGroup>
         <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <None Include="../README.md" Pack="true" PackagePath="\" />
     </ItemGroup>
 
 </Project>
